@@ -1118,27 +1118,6 @@ Dired is a built-in file manager for Emacs that does some pretty amazing things!
 
 #+end_src
 
-* Applications
-
-** Some App
-
-This is an example of configuring another non-Emacs application using org-mode.  Not only do we write out the configuration at =.config/some-app/config=, we also compute the value that gets stored in this configuration from the Emacs Lisp block above it.
-
-#+NAME: the-value
-#+begin_src emacs-lisp :tangle no
-
-  (+ 55 100)
-
-#+end_src
-
-*NOTE*: Set the =:tangle= parameter below to =.config/some-app/config= for this to work!
-
-#+begin_src conf :tangle no :noweb yes
-
-  value=<<the-value()>>
-
-#+end_src
-
 * Runtime Performance
 
 Dial the GC threshold back down so that garbage collection happens more frequently but in less time.
