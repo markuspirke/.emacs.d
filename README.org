@@ -1,0 +1,2 @@
+* This is my personal Emacs configuration. 
+Everything is located inside the *Emacs.org* file.
